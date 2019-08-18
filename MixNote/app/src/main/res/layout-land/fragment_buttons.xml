@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             tools:context=".fragments.ButtonsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+
+            android:layout_width="@dimen/record_page_button_size"
+            android:layout_height="@dimen/record_page_button_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:src="@android:drawable/ic_media_pause"
+            android:id="@+id/stop_recording_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+    />
+
+    <ImageButton android:layout_width="@dimen/record_page_button_size"
+                 android:layout_height="@dimen/record_page_button_size"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_marginEnd="8dp"
+                 tools:src="@drawable/ic_outer_circle"
+                 android:id="@+id/start_pause_recording_button"
+                 app:layout_constraintStart_toStartOf="parent"
+                 android:layout_marginStart="8dp"
+                 app:layout_constraintBottom_toTopOf="@id/stop_recording_button"/>
+
+    <ImageButton android:layout_width="@dimen/record_page_button_size"
+                 android:layout_height="@dimen/record_page_button_size"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_marginEnd="8dp"
+                 android:layout_marginBottom="8dp"
+                 app:layout_constraintBottom_toTopOf="@id/start_pause_recording_button"
+                 tools:src="@android:drawable/ic_menu_camera" app:layout_constraintStart_toStartOf="parent"
+                 android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
